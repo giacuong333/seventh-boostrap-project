@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #ff511a;
+  --secondary-color: #43ba7f;
+  --tertiary-color: #212741;
+  --quaternary-color: #f7f7f7;
+  --white-color: #fff;
+  --block-color: #000;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Common */
+.active {
+  color: var(--primary-color) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn--hover:hover {
+  opacity: 0.9;
+}
+
+.btn-discover {
+  background-color: var(--secondary-color);
+}
+
+.btn-contact {
+  background-color: var(--primary-color);
+}
+
+.btn-discover,
+.btn-contact {
+  padding: 0.6rem 1rem;
+  color: var(--white-color) !important;
+}
+
+.btns > .btn.btn--normal {
+  color: var(--block-color);
+  border: var(--quaternary-color);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 900;
+  padding: 0.9rem 1.8rem;
+}
+
+/* Boostrap */
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.dropdown-item:last-child,
+.dropdown-item:first-child {
+  overflow: hidden !important;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+tr {
+  line-height: 3.4rem;
+}
+
+tr > td:first-child {
+  color: var(--secondary-color);
+  font-weight: 900;
+}
+
+.form-group {
+  margin-bottom: 1.8rem;
+}
+
+.form-control,
+.form-select {
+  padding: 0.5rem 0;
+}
+
+.form-select,
+.form-control {
+  background-color: rgba(121, 134, 151, 0.7);
+  border: none;
+  color: var(--white-color);
+}
+
+.form-group > .form-label {
+  color: var(--white-color);
+}
+
+.form-group > .form-control:focus,
+.form-group > .form-control:focus {
+  background-color: rgba(121, 134, 151, 0.7);
+  color: var(--white-color);
+}
+
+.testimonial-slides {
+  border-radius: 1rem !important;
+  overflow: hidden;
+}
+
+.carousel-indicators {
+  bottom: -100px;
+}
+
+.carousel-indicators > button {
+  background-color: #f57d56 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  --dimensions: 12px;
+  width: var(--dimensions);
+  height: var(--dimensions);
+  border-radius: 50%;
+  margin: 0 0.4rem;
+}
+
+/* App */
+
+.header {
+  background-color: transparent;
+}
+
+.logo {
+  line-height: 80px;
+  width: 160px;
+}
+
+.navbar-list > li {
+  padding: 1.2rem 1rem;
+}
+
+.navbar-list > li > a,
+.navbar-list > li > .contact-support-btn {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 15px;
+}
+
+.sub-navbar-list {
+  border: none;
+  color: var(--block-color);
+  transition: all ease-in-out 0.2s;
+}
+
+.navbar-list > li:hover > a {
+  color: #ff511a !important;
+}
+
+.contact-support-btn {
+  background-color: var(--secondary-color);
+  padding: 0.6rem 1rem;
+}
+
+/* Slider */
+.top {
+  background-image: url(./imgs/slide-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  border: var(--quaternary-color);
+}
+
+.card > .card-icon > i {
+  transition: all ease-in-out 0.2s;
+}
+
+.card:hover > .card-icon > i {
+  transform: translateY(-1rem);
+}
+
+.card-icon > i {
+  color: var(--secondary-color);
+  font-size: 3.6rem;
+}
+
+/* Register form */
+.register-form {
+  background-image: url("./imgs/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+  margin: 8rem 0;
+}
+
+.register-form__img {
+  margin-top: -8rem;
+  margin-right: -14rem;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Banner */
+.banner {
+  background-image: url("./imgs/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 6rem 0;
+  padding: 5.6rem 0;
+}
+
+/* Testinomial */
+.testinomial {
+  margin: 8rem 0;
+}
+
+/* Less than 1200px */
+@media only screen and (max-width: 992px) {
+  .header {
+    background-color: var(--tertiary-color) !important;
+  }
+
+  .header nav {
+    align-items: unset !important;
+  }
+
+  .navbar-list {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+
+  .navbar-list > li {
+    padding: 1rem 1rem;
+  }
+
+  .divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
