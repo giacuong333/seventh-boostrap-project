@@ -50,6 +50,14 @@ a {
   padding: 0.9rem 1.8rem;
 }
 
+.top,
+.header,
+.btn--hover,
+.sub-navbar-list,
+.footer-company__img > img {
+  transition: all ease 0.3s;
+}
+
 /* Boostrap */
 .dropdown-toggle::after {
   display: none;
@@ -125,6 +133,21 @@ tr > td:first-child {
   margin: 0 0.4rem;
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  --dimensions: 3.4rem;
+  width: var(--dimensions);
+  height: var(--dimensions);
+}
+
+.carousel-control-prev {
+  left: -66px;
+}
+
+.carousel-control-next {
+  right: -66px;
+}
+
 /* App */
 
 .header {
@@ -136,7 +159,7 @@ tr > td:first-child {
   width: 160px;
 }
 
-.navbar-list > li {
+.navbar > li {
   padding: 1.2rem 1rem;
 }
 
@@ -150,7 +173,21 @@ tr > td:first-child {
 .sub-navbar-list {
   border: none;
   color: var(--block-color);
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.sub-navbar-list > li > a {
+  display: block;
+  color: var(--block-color);
   transition: all ease-in-out 0.2s;
+  font-size: 0.85rem;
+  padding: 0.3rem 0;
+}
+
+.dropdown-item:hover > a {
+  color: var(--primary-color) !important;
+  transform: translateX(4px);
 }
 
 .navbar-list > li:hover > a {
@@ -218,9 +255,18 @@ tr > td:first-child {
   padding: 5.6rem 0;
 }
 
-/* Testinomial */
-.testinomial {
-  margin: 8rem 0;
+/* Testimonial */
+.testimonial {
+  margin: 10rem 0;
+}
+
+/* Footer */
+.footer-company__img {
+  cursor: pointer;
+}
+
+.footer-company__img:hover > img {
+  opacity: 0.7;
 }
 
 /* Less than 1200px */

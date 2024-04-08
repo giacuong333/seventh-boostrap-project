@@ -24,7 +24,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap" rel="stylesheet" />
 
     <!-- Css -->
     <link rel="stylesheet" href="style.css" />
@@ -42,12 +42,12 @@
                 </div>
 
                 <!-- Used for small screen -->
-                <button type="button" class="btn d-block d-lg-none text-white fs-3" data-bs-toggle="collapse" data-bs-target="#navbar-list" aria-controls="navbar-list" aria-expanded="false">
+                <button type="button" class="btn d-block d-lg-none text-white fs-3" data-bs-toggle="collapse" data-bs-target="#navbar-list-id" aria-controls="navbar-list-id" aria-expanded="false">
                   <i class="fa fa-solid fa-bars"></i>
                 </button>
               </div>
 
-              <ul class="navbar d-lg-flex justify-content-between align-items-center navbar-list m-0 p-0 collapse collapse-vertical" id="navbar-list" style="list-style-type: none">
+              <ul class="navbar navbar-list d-lg-flex justify-content-between align-items-center m-0 p-0 collapse collapse-vertical" id="navbar-list-id" style="list-style-type: none">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
@@ -55,13 +55,13 @@
                   <a href="#" class="dropdown-toggle d-flex align-items-center" role="button" data-bs-toggle="dropdown" id="sub-navbar-list">Pages <i class="fa fa-solid fa-angle-down ms-1"></i></a>
 
                   <!-- Sub nav-list -->
-                  <ul style="list-style-type: none" class="dropdown-menu dropdown-menu-start sub-navbar-list p-0 m-0 shadow-lg" aria-labelledby="sub-navbar-list">
+                  <ul style="list-style-type: none" class="dropdown-menu dropdown-menu-start sub-navbar-list p-0 m-0 shadow rounded-3" aria-labelledby="sub-navbar-list">
                     <li class="dropdown-item"><a role="button" href="#">About Us</a></li>
                     <li class="dropdown-item"><a role="button" href="#">Our Services</a></li>
                     <li class="dropdown-item"><a role="button" href="#">Contact Us</a></li>
                   </ul>
                 </li>
-                <li><a href="#testimonials" class="active">Testimonials</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li class="d-lg-block d-none"><button type="button" class="btn contact-support-btn text-white rounded-3">Contact Support</button></li>
               </ul>
             </nav>
@@ -70,26 +70,62 @@
       </header>
 
       <!-- Slider -->
-      <div class="sliders">
-        <div class="slider-content container" style="padding-top: 6rem">
-          <div class="row">
-            <div class="col-lg-7 col-12 text-center text-lg-start">
-              <h1 class="text-white" style="font-size: 4rem; font-weight: 900">Best One in Town & Crypto <span style="color: var(--primary-color)">Services</span></h1>
-              <hr class="divider bg-white rounded-pill my-5 mx-md-start mx-lg-start" style="border: 0.2rem solid #fff; opacity: 1; width: 5rem" />
-              <p class="p-0 mx-0 my-5 text-white d-md-block d-lg-block d-none">When you browse through different tags on TemplateMo website, you can see a variety of CSS templates which are responsive website designs for different individual needs. Please tell your friends about our website. Thank you.</p>
-              <div class="btns">
-                <button type="button" class="btn btn--hover btn-discover me-3 rounded-3">Discover More</button>
-                <button type="button" class="btn btn--hover btn-contact rounded-3">Contact Us</button>
+      <div class="sliders" id="home">
+        <div class="slider-content container" style="padding-top: 8rem">
+          <div class="carousel slide" id="slide-home">
+            <div class="row carousel-inner">
+              <div class="carousel-item active">
+                <div class="col-lg-7 col-12 text-center text-md-start text-lg-start">
+                  <h1 class="text-white" style="font-size: 3.4rem; font-weight: 900">Best One in Town & Crypto <span style="color: var(--primary-color)">Services</span></h1>
+                  <hr class="divider bg-white rounded-pill my-5 mx-md-start mx-lg-start" style="border: 0.2rem solid #fff; opacity: 1; width: 5rem" />
+                  <p class="p-0 mx-0 my-5 text-white d-md-block d-lg-block d-none">When you browse through different tags on TemplateMo website, you can see a variety of CSS templates which are responsive website designs for different individual needs. Please tell your friends about our website. Thank you.</p>
+                  <div class="btns">
+                    <button type="button" class="btn btn--hover btn-discover me-3 rounded-3">Discover More</button>
+                    <button type="button" class="btn btn--hover btn-contact rounded-3">Contact Us</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="col-lg-7 col-12 text-center text-md-start text-lg-start">
+                  <h1 class="text-white" style="font-size: 3.4rem; font-weight: 900">Get <span style="color: var(--primary-color)">ready</span> for your business & upgrade <span style="color: var(--primary-color)">all aspects</span></h1>
+                  <hr class="divider bg-white rounded-pill my-5 mx-md-start mx-lg-start" style="border: 0.2rem solid #fff; opacity: 1; width: 5rem" />
+                  <p class="p-0 mx-0 my-5 text-white d-md-block d-lg-block d-none">Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
+                  <div class="btns">
+                    <button type="button" class="btn btn--hover btn-discover me-3 rounded-3">Discover More</button>
+                    <button type="button" class="btn btn--hover btn-contact rounded-3">Contact Us</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="col-lg-7 col-12 text-center text-md-start text-lg-start">
+                  <h1 class="text-white" style="font-size: 3.4rem; font-weight: 900"><span style="color: var(--primary-color)">Digital</span> Currency for you & Best <span style="color: var()">Crypto</span> Tips</h1>
+                  <hr class="divider bg-white rounded-pill my-5 mx-md-start mx-lg-start" style="border: 0.2rem solid #fff; opacity: 1; width: 5rem" />
+                  <p class="p-0 mx-0 my-5 text-white d-md-block d-lg-block d-none">You will see a bunch of free CSS templates when you search on Google. TemplateMo website is probably the best one because it is 100% free. It does not ask you anything in return. You have a total freedom to use any template for any purpose.</p>
+                  <div class="btns">
+                    <button type="button" class="btn btn--hover btn-discover me-3 rounded-3">Discover More</button>
+                    <button type="button" class="btn btn--hover btn-contact rounded-3">Contact Us</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slide-home" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slide-home" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
 
     <!-- Main -->
     <main>
-      <div class="card-box container mt-5">
+      <div class="card-box container mt-5" id="services">
         <div class="row">
           <div class="col-lg-6 col-12 mt-4">
             <div class="card px-5 py-3 rounded-3 shadow-sm d-flex flex-row justify-content-center align-items-center">
@@ -170,10 +206,10 @@
       <div class="banner">
         <div class="banner-content container">
           <div class="row">
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12 text-center text-lg-start">
               <h1 class="text-white" style="font-weight: 900">Business <span style="color: var(--primary-color)">Solutions</span> and <span style="color: var(--secondary-color)">Crypto</span> Investments</h1>
             </div>
-            <div class="col-lg-6 col-12 text-end my-auto">
+            <div class="col-lg-6 col-12 text-center text-lg-end my-auto m-lg-auto mt-3">
               <div class="btns">
                 <button type="button" class="btn btn--hover btn-discover me-3 rounded-3">Discover More</button>
                 <button type="button" class="btn btn--hover btn-contact rounded-3">Contact Us</button>
@@ -184,7 +220,7 @@
       </div>
 
       <!-- About -->
-      <div class="about">
+      <div class="about" id="about">
         <div class="about-content container">
           <div class="row text-center mb-5">
             <p class="mb-2" style="font-weight: 900; color: var(--primary-color)">ABOUT US</p>
@@ -256,7 +292,7 @@
       <div class="register-form">
         <div class="register-form__content container">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 d-lg-block d-md-block d-none">
               <img src="./imgs/calculator-image.png" class="register-form__img img-responsive" alt="" />
             </div>
             <div class="col-lg-5">
@@ -285,7 +321,7 @@
                 <div class="row">
                   <div class="form-group col-12">
                     <label for="reason" class="form-label">Your Reason</label>
-                    <select id="reason" class="form-select">
+                    <select id="reason" class="form-select ps-3">
                       <option>Choose an Option</option>
                       <option>Online Banking</option>
                       <option>Financial Control</option>
@@ -308,11 +344,11 @@
       </div>
 
       <!-- Testimonials -->
-      <div class="testinomial">
+      <div class="testimonial" id="testimonials">
         <div class="testimonial-content container">
           <div class="row text-center mb-5">
             <p class="mb-2" style="font-weight: 900; color: var(--primary-color)">TESTIMONIALS</p>
-            <h1 style="font-weight: 900" class="mb-5">What They Say</h1>
+            <h1 style="font-weight: 900" class="mb-2">What They Say</h1>
           </div>
 
           <div class="row col-lg-10 carousel slide mx-auto" data-bs-ride="carousel" id="testimonial-slides-id">
@@ -372,33 +408,33 @@
       <!-- Footer -->
       <footer style="background-color: #212741">
         <div class="footer container" style="padding: 4rem 0">
-          <div class="row">
-            <div class="col-lg-2 col-4">
+          <div class="row mx-auto mx-lg-0">
+            <div class="col-lg-2 col-sm-4 col-12 text-center p-lg-0 p-md-0 py-3">
               <div class="footer-company__img">
                 <img src="./imgs/client-01.png" class="img-responsive" alt="" />
               </div>
             </div>
-            <div class="col-lg-2 col-4">
+            <div class="col-lg-2 col-sm-4 col-12 text-center p-lg-0 p-md-0 py-3">
               <div class="footer-company__img">
                 <img src="./imgs/client-01.png" class="img-responsive" alt="" />
               </div>
             </div>
-            <div class="col-lg-2 col-4">
+            <div class="col-lg-2 col-sm-4 col-12 text-center p-lg-0 p-md-0 py-3">
               <div class="footer-company__img">
                 <img src="./imgs/client-01.png" class="img-responsive" alt="" />
               </div>
             </div>
-            <div class="col-lg-2 col-4">
+            <div class="col-lg-2 col-sm-4 col-12 text-center p-lg-0 p-md-0 py-3">
               <div class="footer-company__img">
                 <img src="./imgs/client-01.png" class="img-responsive" alt="" />
               </div>
             </div>
-            <div class="col-lg-2 col-4">
+            <div class="col-lg-2 col-sm-4 col-12 text-center p-lg-0 p-md-0 py-3">
               <div class="footer-company__img">
                 <img src="./imgs/client-01.png" class="img-responsive" alt="" />
               </div>
             </div>
-            <div class="col-lg-2 col-4">
+            <div class="col-lg-2 col-sm-4 col-12 text-center p-lg-0 p-md-0 py-3">
               <div class="footer-company__img">
                 <img src="./imgs/client-01.png" class="img-responsive" alt="" />
               </div>
